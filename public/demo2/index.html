@@ -1,0 +1,13 @@
+<!doctype html>
+<html ng-app>
+<head>
+		<link rel="stylesheet" type="text/css" href="./demo2.css" />
+		<script src="./../angular.min.js"></script>
+		<script src="./demo2.js"></script>
+</head>
+<body>
+	<ul ng-controller="demoController">
+		<li ng-repeat="language in languages"> nome: {{language.name}} punti: {{language.age}}</li>
+	</ul>
+</body>
+</html>

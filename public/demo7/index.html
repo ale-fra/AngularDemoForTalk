@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="App">
+<head>
+		<link rel="stylesheet" type="text/css" href="./demo.css" />
+		<script src="./../angular.min.js"></script>
+		<script src="./demo.js"></script>
+</head>
+<body>
+
+	<button ng-click="predicate = 'age'; reverse=!reverse"> Sort by Age </button>
+	<ul ng-controller="demoController">
+		<li ng-repeat="language in languages | orderBy:predicate:reverse "> nome: {{language.name | uppercase}} age: {{language.age}}</li>
+		<button  ng-click="getAllLanguages(); showButton=true" ng-hide="showButton"> get all languages!</button>
+	</ul>
+</body>
+</html>
